@@ -42,6 +42,12 @@ public class Main {
 
         Circle circle = new Circle(2.0);
         System.out.println(circle.radius);
+        circle.setRadius(13);
+        System.out.println("circumference of circle is: " + circle.getPerimeter());
+        System.out.println("The area of circle is: " + circle.getArea());
+
+        Circle circle2 = new Circle();
+        System.out.println(circle2.radius);
 
     }
 }

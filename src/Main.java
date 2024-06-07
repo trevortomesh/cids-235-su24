@@ -49,5 +49,11 @@ public class Main {
         Circle circle2 = new Circle();
         System.out.println(circle2.radius);
 
+        Circle c = new Circle(1.2);
+        System.out.println("Value of c is: " + c);
+
+        Dog mocha = new Dog();
+
     }
 }
+

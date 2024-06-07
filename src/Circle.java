@@ -1,15 +1,18 @@
 public class Circle {
     /** The radius of the Circle **/
 
-    double radius = 1; // Data fields
-
+    double radius; // Data fields
+    static int numberOfObjects = 0;
 
     // CONSTRUCTORS *************************************
     Circle(){
+        radius = 1.0;
+        numberOfObjects++;
     }
 
     Circle(double newRadius){
         radius = newRadius;
+        numberOfObjects++;
     }
 //*******************************************************
 
@@ -26,5 +29,9 @@ public class Circle {
         return radius * radius * Math.PI;
     }
     //*******************************************
+
+    static int getNumberOfObjects(){
+        return numberOfObjects;
+    }
 
 }

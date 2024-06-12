@@ -1,8 +1,8 @@
 public class Circle {
     /** The radius of the Circle **/
 
-    double radius; // Data fields
-    static int numberOfObjects = 0;
+    private double radius; // Data fields
+    private static int numberOfObjects = 0;
 
     // CONSTRUCTORS *************************************
     Circle(){
@@ -17,8 +17,12 @@ public class Circle {
 //*******************************************************
 
     //********* METHODS **************************
-    void setRadius(double newRadius){
+    void setRadius(double newRadius){ //setter method to set variable
         radius = newRadius;
+    }
+
+    double getRadius(){
+        return radius;
     }
 
     double getPerimeter(){
@@ -30,7 +34,7 @@ public class Circle {
     }
     //*******************************************
 
-    static int getNumberOfObjects(){
+    static int getNumberOfObjects(){ //getter method for numberOfObjects
         return numberOfObjects;
     }
 

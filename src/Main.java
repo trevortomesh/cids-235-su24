@@ -83,10 +83,10 @@ public class Main {
 
         Circle circle1 = new Circle();  // creating a circle object with default radius (1)
         Circle circle2 = new Circle(5); // creating a circle object with radius of 5
-        //System.out.println(circle1.radius);
+        //Circle.numberOfObjects = 12;
+
         System.out.println("The perimeter of the circle is: " + circle1.getPerimeter());
-        //System.out.println("The radius of circle1 is now: " + circle1.radius);
-        //circle1.radius = 12;
+
         circle1.setRadius(12);
         System.out.println("The radius of the circle1 is now: " + circle1.getRadius());
         System.out.println("There are " + Circle.getNumberOfObjects() + " circles!");

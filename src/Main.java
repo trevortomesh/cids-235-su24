@@ -85,17 +85,37 @@ public class Main {
         Circle circle2 = new Circle(5); // creating a circle object with radius of 5
         //Circle.numberOfObjects = 12;
 
-        System.out.println("The perimeter of the circle is: " + circle1.getPerimeter());
+        //System.out.println("The perimeter of the circle is: " + circle1.getPerimeter());
 
         circle1.setRadius(12);
-        System.out.println("The radius of the circle1 is now: " + circle1.getRadius());
-        System.out.println("There are " + Circle.getNumberOfObjects() + " circles!");
-
+        //System.out.println("The radius of the circle1 is now: " + circle1.getRadius());
+        //System.out.println("There are " + Circle.getNumberOfObjects() + " circles!");
+        printCircle(circle1);
+        printCircle(circle2);
 
 
        // System.out.println(Circle.getNumberOfObjects());
         //System.out.println(circle1.getNumberOfObjects());
 
+        int a = 5;
+        System.out.println("in main: a in main method is " + a);
+        System.out.println("in main: calling printInt...");
+        printInt(a,a);
+        System.out.println("in main: a is now " + a);
+
+    }
+
+    public static void printInt(int b, int a){
+        System.out.println("in method: you passed the value " + b);
+        System.out.println("in method: changing value of b to 0");
+        b = 0;
+        System.out.println("in method: b is now " + b);
+        a = b;
+    }
+
+    public static void printCircle(Circle c){
+        System.out.println("The area of the circle of radius " +
+                c.getRadius() + " is " + c.getArea());
     }
 }
 

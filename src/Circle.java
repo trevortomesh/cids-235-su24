@@ -3,40 +3,42 @@ public class Circle {
 
     private double radius; // Data fields
     private static int numberOfObjects = 0;
+    //System.out.println(newRadius);
 
     // CONSTRUCTORS *************************************
     Circle(){
-        radius = 1.0;
-        numberOfObjects++;
+        this(1.0);
+        //System.out.println("Default called... setting radius to 1.0");
     }
 
-    Circle(double newRadius){
-        radius = newRadius;
+    Circle(double radius){
+        this.radius = radius;
         numberOfObjects++;
     }
 //*******************************************************
 
+
     //********* METHODS **************************
-    void setRadius(double newRadius){ //setter method to set variable
+    void setRadius(double radius){ //setter method to set variable
         // ensure there is no radius <= 0
-        if(newRadius > 0) {
-            radius = newRadius;
+        if(radius > 0) {
+            this.radius = radius;
         }
         else{
-            radius = 1.0;
+            this.radius = 1.0;
         }
     }
 
     double getRadius(){
-        return radius;
+        return this.radius;
     }
 
     double getPerimeter(){
-        return 2 * radius * Math.PI;
+        return 2 * this.radius * Math.PI;
     }
 
     double getArea(){
-        return radius * radius * Math.PI;
+        return this.radius * this.radius * Math.PI;
     }
     //*******************************************
 

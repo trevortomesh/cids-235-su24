@@ -2,9 +2,13 @@ import java.util.Scanner;
 import java.util.Random;
 public class Main {
     public static void main(String[] args) {
-        Circle[] circleArray;
-        circleArray = createCircleArray();
-        printCircleArray(circleArray);
+        //Circle[] circleArray;
+        //circleArray = createCircleArray();
+        //System.out.println(circleArray);
+        //printCircleArray(circleArray);
+        F f = new F();
+        f.p();
+
     }
 
     public static Circle[] createCircleArray(){

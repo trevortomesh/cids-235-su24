@@ -17,6 +17,12 @@ public class Loan {
     /** Default Constructor**/
     public Loan(){
         this(2.5, 1, 1000);
+        /*
+        this.annualInterestRate = 2.5;
+        this.numberOfYears = 1;
+        this.loanAmount = 1000;
+        loanDate = new java.util.Date();
+        */
     }
 
     /** Construct a loan with specific annual interest rate,
@@ -60,6 +66,52 @@ public class Loan {
 
     public void setNumberOfYears(int numberOfYears){
         this.numberOfYears = numberOfYears;
+    }
+
+    /**
+     * Getter: return the loan amount
+     * @return loanAmount
+     */
+
+    public double getLoanAmount(){
+        return loanAmount;
+    }
+
+    /**
+     * setter: sets the loan amount
+     * @param loanAmount - amount to be set
+     */
+    public void setLoanAmount(double loanAmount){
+        this.loanAmount = loanAmount;
+    }
+
+    /**
+     *  getMonthlyPayment: computes the monthly amount owing from
+     *  the annual interest rate and loan amount.
+     * @return monthlyPayment - the computing monthly amount owing
+     */
+    public double getMonthlyPayment(){
+        double monthlyInterestRate = annualInterestRate / 1200;
+        double monthlyPayment = loanAmount * monthlyInterestRate / (1-
+                (1 / Math.pow(1 + monthlyInterestRate, numberOfYears * 12)));
+        return monthlyPayment;
+    }
+
+    /**
+     * getTotalPayment - returns the computing total for the loan
+     * @return totalPayment
+     */
+    public double getTotalPayment(){
+        double totalPayment = getMonthlyPayment() * numberOfYears * 12;
+        return totalPayment;
+    }
+
+    /**
+     * getter -- returns the loan date
+     * @return loanDate - datafield storing the date loan was created
+     */
+    public java.util.Date getLoanDate(){
+        return loanDate;
     }
 
 }

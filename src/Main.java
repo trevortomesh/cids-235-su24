@@ -2,12 +2,34 @@ import java.util.Scanner;
 import java.util.Random;
 public class Main {
     public static void main(String[] args) {
-        //Circle[] circleArray;
-        //circleArray = createCircleArray();
-        //System.out.println(circleArray);
-        //printCircleArray(circleArray);
-        F f = new F();
-        f.p();
+
+    Scanner input = new Scanner(System.in);
+
+    // ask for annual interest rate
+    System.out.print("Enter annual interest rate (ex. 8.25): ");
+    double annualInterestRate = input.nextDouble();
+
+    // ask for number of years
+    System.out.print("Enter number of years as an int: ");
+    int numberOfYears = input.nextInt();
+
+    // ask for loan amount
+    System.out.print("Enter loan amount (ex. 120000.95): ");
+    double loanAmount = input.nextDouble();
+
+    Loan loan = new Loan(annualInterestRate, numberOfYears, loanAmount);
+
+    // Display loan date, monthy payment and total payment
+        System.out.printf("The loan was created on %s\n" +
+                "The monthly payment is %.2f\nThe total payment is %.2f\n",
+                loan.getLoanDate().toString(), loan.getMonthlyPayment(),
+                loan.getTotalPayment());
+
+
+
+
+
+
 
     }
 

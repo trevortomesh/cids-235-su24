@@ -7,6 +7,7 @@
 //              for computing the monthly and total payments
 //----------------------------------------------------------------
 
+
 public class Loan {
     private double annualInterestRate;
     private int numberOfYears;

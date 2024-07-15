@@ -3,6 +3,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
+        /*
     Scanner input = new Scanner(System.in);
 
     // ask for annual interest rate
@@ -24,12 +25,12 @@ public class Main {
                 "The monthly payment is %.2f\nThe total payment is %.2f\n",
                 loan.getLoanDate().toString(), loan.getMonthlyPayment(),
                 loan.getTotalPayment());
+*/
 
-
-
-
-
-
+        //Engine engine = new Engine();
+        //System.out.println("I have an engine called " + engine.toString());
+        Car car = new Car();
+        car.move();
 
     }
 

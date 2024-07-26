@@ -1,22 +1,27 @@
-public class Circle {
+public class Circle extends GeometricObject {
     /** The radius of the Circle **/
 
     private double radius; // Data fields
-    private static int numberOfObjects = 0;
+    //private static int numberOfObjects = 0;
     //System.out.println(newRadius);
 
     // CONSTRUCTORS *************************************
-    Circle(){
+    public Circle(){
         this(1.0);
         //System.out.println("Default called... setting radius to 1.0");
     }
 
-    Circle(double radius){
+   public Circle(double radius){
         this.radius = radius;
-        numberOfObjects++;
+        //numberOfObjects++;
+    }
+
+    public Circle(double radius, String color, boolean filled){
+        this.radius = radius;
+        setColor(color);
+        setFilled(filled);
     }
 //*******************************************************
-
 
     //********* METHODS **************************
     void setRadius(double radius){ //setter method to set variable
@@ -30,20 +35,29 @@ public class Circle {
     }
 
     double getRadius(){
-        return this.radius;
+        return radius;
     }
 
     double getPerimeter(){
-        return 2 * this.radius * Math.PI;
+        return 2 * radius * Math.PI;
+    }
+
+    public double getDiameter(){
+        return 2 * radius;
     }
 
     double getArea(){
-        return this.radius * this.radius * Math.PI;
+        return radius * radius * Math.PI;
+    }
+
+    public void printCircle(){
+        System.out.println("Circle created: " + getDateCreated() + "\nradius: " + radius);
     }
     //*******************************************
 
+    /*
     public static int getNumberOfObjects(){ //getter method for numberOfObjects
         return numberOfObjects;
-    }
+    }*/
 
 }

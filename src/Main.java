@@ -3,6 +3,9 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
+        Circle c1 = new Circle(12.0, "red", true);
+        System.out.println(c1.toString());
+
         /*
     Scanner input = new Scanner(System.in);
 
@@ -29,8 +32,8 @@ public class Main {
 
         //Engine engine = new Engine();
         //System.out.println("I have an engine called " + engine.toString());
-        Car car = new Car();
-        car.move();
+     //   Car car = new Car();
+     //   car.move();
 
     }
 

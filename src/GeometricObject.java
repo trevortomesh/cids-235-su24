@@ -38,4 +38,8 @@ public class GeometricObject {
         return "created on " + dateCreated + "\ncolor: " + color +
                 "\nfilled: " + filled;
     }
+
+    private void sayMoo(){
+        System.out.println("Moo!");
+    }
 }

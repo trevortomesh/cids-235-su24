@@ -1,10 +1,17 @@
+import org.w3c.dom.css.Rect;
+
 import java.util.Scanner;
 import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-        Circle c1 = new Circle(12.0, "red", true);
+        Faculty bilbo = new Faculty();
+
+        /*Circle c1 = new Circle(12.0, "red", true);
         System.out.println(c1.toString());
+
+        Rectangle rect = new Rectangle(20,5,"purple", true);
+        System.out.println(rect.toString());*/
 
         /*
     Scanner input = new Scanner(System.in);

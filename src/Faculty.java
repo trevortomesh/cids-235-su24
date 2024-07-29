@@ -1,7 +1,12 @@
-public class Faculty {
-    private Course[] courseList;
+public class Faculty extends Employee {
 
-    public void addCourse(Course c){
-        // deal with this later... //
+    public Faculty(){
+        System.out.println("(4) Performs Faculty's Tasks");
     }
+
+    //private Course[] courseList;
+    /*public void addCourse(Course c){
+        // deal with this later... //
+    }*/
+
 }

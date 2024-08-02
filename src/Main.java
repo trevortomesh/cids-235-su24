@@ -5,13 +5,34 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-        Faculty bilbo = new Faculty();
+        //int a = 5;
+        //System.out.println("a is " + a);
+        //Integer a = new Integer("5");
+        Integer a = Integer.valueOf("5");
+        System.out.println(a);
 
-        /*Circle c1 = new Circle(12.0, "red", true);
-        System.out.println(c1.toString());
+        //Double b = new Double("2.4");
+        Double b = Double.valueOf("2.4");
+        System.out.println(b);
 
-        Rectangle rect = new Rectangle(20,5,"purple", true);
-        System.out.println(rect.toString());*/
+
+
+        /*Cat haku = new Cat("Haku");
+        haku.speak();
+
+        Axolotl wooper = new Axolotl("Wooper");
+        wooper.speak();
+
+        Dog scooby = new Dog("Scooby");
+        scooby.speak();*/
+
+        //Faculty bilbo = new Faculty();
+
+        //Circle c1 = new Circle(12.0, "red", true);
+        //System.out.println(c1.toString());
+
+        //Rectangle rect = new Rectangle(20,5,"purple", true);
+        //System.out.println(rect.toString());
 
         /*
     Scanner input = new Scanner(System.in);

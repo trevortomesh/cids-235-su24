@@ -8,6 +8,9 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
+
+
+        /*
         ArrayList<String> cityList = new ArrayList<>();
 
         cityList.add("Cameron");
@@ -20,6 +23,14 @@ public class Main {
         System.out.println(cityList.indexOf("Sarona"));
         cityList.add("Roberts");
         System.out.println(cityList.size());
+        System.out.println(cityList);
+        System.out.println(cityList.isEmpty());
+        System.out.println(cityList.get(3));
+        cityList.set(3, "Woodbury");
+        System.out.println(cityList.get(3));
+        cityList.remove("River Falls");
+        System.out.println(cityList);
+        cityList.clear();
         System.out.println(cityList);
 
         /*

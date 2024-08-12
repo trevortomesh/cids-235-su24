@@ -9,12 +9,37 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
+        Object o = new Student();
+        Object x = new Circle();
+        m(o);
+        Student b = (Student) x;
+        m(b);
+
+
+
+//        m(new GraduateStudent());
+//        Object o = new Student();
+//        Student a = new GraduateStudent();
+//        GeometricObject b = new Circle();
+
+//        int x = 5;
+//        double y = x;
+//        System.out.println(y);
+//        int z = (int) y;
+//        System.out.println(z);
+
+        //Student m = new Object();
+        //m(o);
+//        m(new Student());
+//        m(new Person());
+//        m(new Object());
+
        // Circle a = new Object();
         //GeometricObject a = new Circle();
-        Object o = new GeometricObject();
+        /*Object o = new GeometricObject();
         Object p = new Object();
         System.out.println(o.toString());
-        System.out.println(p.toString());
+        System.out.println(p.toString());*/
 
         /*
         String[] array = {"red", "green", "blue"};
@@ -37,6 +62,11 @@ public class Main {
 
     }
 
+
+
+    public static void m(Object x){  //Object x = new Student();
+        System.out.println(x.toString());
+    }
     /** Display geometric object properties**/
 
     public static void displayObject(GeometricObject object){

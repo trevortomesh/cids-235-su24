@@ -1,5 +1,6 @@
-public class Person {
-    public Person(){
-        System.out.println("(1) Performs Person's tasks");
+public class Person extends Object{
+    @Override
+    public String toString(){
+        return "Person";
     }
 }

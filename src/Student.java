@@ -1,5 +1,10 @@
-public class Student {
-    private Course[] courseList;
+public class Student extends Person {
+
+    @Override
+    public String toString(){
+        return "Student";
+    }
+    /*private Course[] courseList;
     private Name name;
     private Address address;
 
@@ -14,5 +19,5 @@ public class Student {
 
     public void setAddress(Address address){
         this.address = address;
-    }
+    }*/
 }

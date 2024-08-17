@@ -34,11 +34,11 @@ public class Circle extends GeometricObject {
         }
     }
 
-    double getRadius(){
+    public double getRadius(){
         return radius;
     }
 
-    double getPerimeter(){
+    public double getPerimeter(){
         return 2 * radius * Math.PI;
     }
 
@@ -46,7 +46,7 @@ public class Circle extends GeometricObject {
         return 2 * radius;
     }
 
-    double getArea(){
+    public double getArea(){
         return radius * radius * Math.PI;
     }
 

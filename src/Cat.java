@@ -14,7 +14,7 @@ public class Cat extends Animal{
     }
 
     @Override
-    public void speak(){
-        System.out.println(name + " goes meow");
+    public String speak(){
+        return " goes meow";
     }
 }

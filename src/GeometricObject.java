@@ -1,16 +1,16 @@
-public class GeometricObject {
+public abstract class GeometricObject {
 
     private String color = "white";
     private boolean filled;
     private java.util.Date dateCreated;
 
-    public GeometricObject(){
+    protected GeometricObject(){
         //dateCreated = new java.util.Date((2024-1900), 4, 7);
         dateCreated = new java.util.Date();
 
     }
 
-    public GeometricObject(String color, boolean filled){
+    protected GeometricObject(String color, boolean filled){
         dateCreated = new java.util.Date();
         this.color = color;
         this.filled = filled;
@@ -41,7 +41,7 @@ public class GeometricObject {
                 "\nfilled: " + filled;
     }
 
-    private void sayMoo(){
-        System.out.println("Moo!");
-    }
+    public abstract double getArea();
+
+    public abstract double getPerimeter();
 }

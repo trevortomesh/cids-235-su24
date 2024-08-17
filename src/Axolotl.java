@@ -6,8 +6,8 @@ public class Axolotl extends Animal {
     }
 
     @Override
-    public void speak(){
-        super.speak(name);
+    public String speak(){
+        return "goes blub";
     }
 
 }

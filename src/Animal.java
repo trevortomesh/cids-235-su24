@@ -1,15 +1,14 @@
-public class Animal {
+abstract class Animal {
+    private double weight;
 
-    Animal(){
-        System.out.println("An animal was created!");
+    public double getWeight(){
+        return weight;
     }
 
-    public void speak(){
-        System.out.println("An animal makes a noise!");
+    public void setWeight(double weight){
+        this.weight = weight;
     }
 
-    public void speak(String name){
-        System.out.println(name + " makes a noise!");
-    }
+    abstract String speak();
 
 }
